@@ -1,24 +1,36 @@
-{% extends "layout.html" %}
-{% block body %}
-<h2>Scoreboard</h2>
-<table border="1" cellpadding="5" cellspacing="0">
-  <tr>
-    <th>Rank</th>
-    <th>Username</th>
-    <th>Points</th>
-    <th>View History</th>
-  </tr>
-  {% for user_info in scoreboard %}
-  <tr>
-    <td>{{ loop.index }}</td>
-    <td>{{ user_info["username"] }}</td>
-    <td>{{ user_info["points"] }}</td>
-    <td>
-      <a href="https://topto-exercise-tracker.onrender.com/user/{{ user_info['username'] }}">
-        View
-      </a>
-    </td>
-  </tr>
-  {% endfor %}
-</table>
-{% endblock %}
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Workout Competition - Scoreboard</title>
+  </head>
+  <body>
+    <h1>Workout Competition</h1>
+    <div>
+      <a href="https://topto-exercise-tracker.onrender.com/login">Login</a> |
+      <a href="https://topto-exercise-tracker.onrender.com/signup">Sign Up</a> |
+      <a href="https://topto-exercise-tracker.onrender.com/dashboard">My Dashboard</a> |
+      <a href="https://topto-exercise-tracker.onrender.com/scoreboard">Scoreboard</a>
+    </div>
+    <hr>
+    <h2>Scoreboard</h2>
+    <!-- In a dynamic version, the backend would fill in the ranking. Here is a placeholder table. -->
+    <table border="1" cellpadding="5" cellspacing="0">
+      <tr>
+        <th>Rank</th>
+        <th>Username</th>
+        <th>Points</th>
+        <th>View History</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>[User1]</td>
+        <td>[Points]</td>
+        <td><a href="https://topto-exercise-tracker.onrender.com/user/User1">View</a></td>
+      </tr>
+      <tr>
+        <td colspan="4">More users...</td>
+      </tr>
+    </table>
+  </body>
+</html>

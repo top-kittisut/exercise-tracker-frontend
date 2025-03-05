@@ -1,15 +1,29 @@
-{% extends "layout.html" %}
-{% block body %}
-<h2>Sign Up</h2>
-<form method="POST" action="https://topto-exercise-tracker.onrender.com/signup">
-  <label>Username:
-    <input type="text" name="username" required>
-  </label>
-  <br><br>
-  <label>Password:
-    <input type="password" name="password" required>
-  </label>
-  <br><br>
-  <input type="submit" value="Sign Up">
-</form>
-{% endblock %}
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Workout Competition - Sign Up</title>
+  </head>
+  <body>
+    <h1>Workout Competition</h1>
+    <div>
+      <a href="https://topto-exercise-tracker.onrender.com/login">Login</a> |
+      <a href="https://topto-exercise-tracker.onrender.com/signup">Sign Up</a> |
+      <a href="https://topto-exercise-tracker.onrender.com/dashboard">My Dashboard</a> |
+      <a href="https://topto-exercise-tracker.onrender.com/scoreboard">Scoreboard</a>
+    </div>
+    <hr>
+    <h2>Sign Up</h2>
+    <form method="POST" action="https://topto-exercise-tracker.onrender.com/signup">
+      <label>Username:
+        <input type="text" name="username" required>
+      </label>
+      <br><br>
+      <label>Password:
+        <input type="password" name="password" required>
+      </label>
+      <br><br>
+      <input type="submit" value="Sign Up">
+    </form>
+  </body>
+</html>
